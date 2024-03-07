@@ -12,11 +12,11 @@ package edu.bu.met.cs665.emails;
  * This is the VipCustomerEmail class. It represents an Email sent
  * to a VipCustomer
  */
-public class VipCustomerEmail extends CustomerEmail{
+public class VipCustomerEmail extends CustomerEmail {
   private static final String template = "Thank you for being a VIP customer!";
 
   /**
-   * Create a new VipCustomerEmail by sending the template to the super class
+   * Create a new VipCustomerEmail by sending the template to the super class.
    */
   public VipCustomerEmail() {
     super(template);

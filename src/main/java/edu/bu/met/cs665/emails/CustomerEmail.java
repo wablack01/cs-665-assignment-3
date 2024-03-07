@@ -18,7 +18,7 @@ public abstract class CustomerEmail implements Email {
   private String content;
 
   /**
-   * Create a CustomerEmail with the content set to the provided String
+   * Create a CustomerEmail with the content set to the provided String.
    * @param content The content of the Email
    */
   public CustomerEmail(String content) {
@@ -26,7 +26,7 @@ public abstract class CustomerEmail implements Email {
   }
 
   /**
-   * Insert the Customer name into the content
+   * Insert the Customer name into the content.
    * then send the Email to the Customer
    * @param customer The Customer the Email will be sent to
    */
@@ -36,7 +36,7 @@ public abstract class CustomerEmail implements Email {
   }
 
   /**
-   * Getter for the content of the email
+   * Getter for the content of the email.
    * @return The content of the email
    */
   public String read() {

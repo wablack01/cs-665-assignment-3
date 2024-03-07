@@ -8,9 +8,18 @@
 
 package edu.bu.met.cs665.factories;
 
-import edu.bu.met.cs665.customers.*;
-import edu.bu.met.cs665.emails.*;
+import edu.bu.met.cs665.customers.BusinessCustomer;
 import edu.bu.met.cs665.customers.Customer;
+import edu.bu.met.cs665.customers.FrequentCustomer;
+import edu.bu.met.cs665.customers.NewCustomer;
+import edu.bu.met.cs665.customers.ReturningCustomer;
+import edu.bu.met.cs665.customers.VipCustomer;
+import edu.bu.met.cs665.emails.BusinessCustomerEmail;
+import edu.bu.met.cs665.emails.Email;
+import edu.bu.met.cs665.emails.FrequentCustomerEmail;
+import edu.bu.met.cs665.emails.NewCustomerEmail;
+import edu.bu.met.cs665.emails.ReturningCustomerEmail;
+import edu.bu.met.cs665.emails.VipCustomerEmail;
 
 /**
  * This is the CustomerEmailFactory class. It creates Emails for different Customer types.
@@ -18,7 +27,7 @@ import edu.bu.met.cs665.customers.Customer;
 public class CustomerEmailFactory extends EmailFactory {
 
   /**
-   * Create an Email based on the type of Customer
+   * Create an Email based on the type of Customer.
    * @param customer the Customer the CustomerEmail is for
    * @return the created CustomerEmail
    */

@@ -12,10 +12,10 @@ package edu.bu.met.cs665.customers;
  * This is the VipCustomer class. It represents a VIP
  * customer that can receive emails from the application.
  */
-public class VipCustomer extends Customer{
+public class VipCustomer extends Customer {
 
   /**
-   * Create a new VipCustomer with the given name
+   * Create a new VipCustomer with the given name.
    * @param name the VipCustomer's name
    */
   public VipCustomer(String name) {

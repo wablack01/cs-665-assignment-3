@@ -3,7 +3,7 @@
  * Course: CS-665 Software Designs & Patterns
  * Date: 03/07/2024
  * File Name: ReturningCustomerEmail.java
- * Description: This class is responsible for the methods and attributes of a ReturningCustomerEmail.
+ * Description: This class is responsible for the methods and attributes of ReturningCustomerEmail.
  */
 
 package edu.bu.met.cs665.emails;
@@ -16,7 +16,7 @@ public class ReturningCustomerEmail extends CustomerEmail {
   private static final String template = "Welcome back to our business.";
 
   /**
-   * Create a new ReturningCustomerEmail by sending the template to the super class
+   * Create a new ReturningCustomerEmail by sending the template to the super class.
    */
   public ReturningCustomerEmail() {
     super(template);

@@ -12,10 +12,10 @@ package edu.bu.met.cs665.customers;
  * This is the ReturningCustomer class. It represents a returning
  * customer that can receive emails from the application.
  */
-public class ReturningCustomer extends Customer{
+public class ReturningCustomer extends Customer {
 
   /**
-   * Create a new ReturningCustomer with the given name
+   * Create a new ReturningCustomer with the given name.
    * @param name the ReturningCustomer's name
    */
   public ReturningCustomer(String name) {

@@ -16,7 +16,7 @@ public class FrequentCustomerEmail extends CustomerEmail {
   private static final String template = "Thank you for being a frequent customer.";
 
   /**
-   * Create a new FrequentCustomerEmail by sending the template to the super class
+   * Create a new FrequentCustomerEmail by sending the template to the super class.
    */
   public FrequentCustomerEmail() {
     super(template);

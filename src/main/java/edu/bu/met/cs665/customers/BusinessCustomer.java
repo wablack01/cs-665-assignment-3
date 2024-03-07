@@ -9,13 +9,13 @@
 package edu.bu.met.cs665.customers;
 
 /**
- * This is the BusinessCustomer class. It represents a business
+ * This is the BusinessCustomer class. It represents a business.
  * customer that can receive emails from the application.
  */
 public class BusinessCustomer extends Customer {
 
   /**
-   * Create a new BusinessCustomer with the given name
+   * Create a new BusinessCustomer with the given name.
    * @param name the BusinessCustomer's name
    */
   public BusinessCustomer(String name) {

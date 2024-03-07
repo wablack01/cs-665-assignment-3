@@ -12,10 +12,10 @@ package edu.bu.met.cs665.customers;
  * This is the FrequentCustomer class. It represents a frequent
  * customer that can receive emails from the application.
  */
-public class FrequentCustomer extends Customer{
+public class FrequentCustomer extends Customer {
 
   /**
-   * Create a new FrequentCustomer with the given name
+   * Create a new FrequentCustomer with the given name.
    * @param name the FrequentCustomer's name
    */
   public FrequentCustomer(String name) {

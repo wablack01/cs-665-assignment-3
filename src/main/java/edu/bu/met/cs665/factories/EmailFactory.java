@@ -8,13 +8,13 @@
 
 package edu.bu.met.cs665.factories;
 
-import edu.bu.met.cs665.emails.Email;
 import edu.bu.met.cs665.customers.Customer;
+import edu.bu.met.cs665.emails.Email;
 
 /**
  * This is the abstract EmailFactory class. It defines a method signature
- * that all subclasses will implement to create and return an Email object
+ * that all subclasses will implement to create and return an Email object.
  */
 public abstract class EmailFactory {
-  abstract public Email createEmail(Customer customer);
+  public abstract Email createEmail(Customer customer);
 }

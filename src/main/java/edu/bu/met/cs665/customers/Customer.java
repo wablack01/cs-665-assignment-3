@@ -9,7 +9,6 @@
 package edu.bu.met.cs665.customers;
 
 import edu.bu.met.cs665.emails.Email;
-
 import java.util.ArrayDeque;
 import java.util.Deque;
 
@@ -24,7 +23,7 @@ public abstract class Customer {
   private Deque<Email> emailHistory = new ArrayDeque<>();
 
   /**
-   * Create a name Customer with the given name
+   * Create a name Customer with the given name.
    * @param name the Customer's name
    */
   public Customer(String name) {
@@ -32,7 +31,7 @@ public abstract class Customer {
   }
 
   /**
-   * Getter for the Customer's name
+   * Getter for the Customer's name.
    * @return the Customer's name
    */
   public String getName() {
@@ -40,7 +39,7 @@ public abstract class Customer {
   }
 
   /**
-   * Send an Email to this customer and add to their email history
+   * Send an Email to this customer and add to their email history.
    * @param email the Email sent to this Customer
    */
   public void send(Email email) {
@@ -48,7 +47,7 @@ public abstract class Customer {
   }
 
   /**
-   * Get the Customer's most recent email from the top of the emailHistory stack
+   * Get the Customer's most recent email from the top of the emailHistory stack.
    * @return the Customer's most recent email
    */
   public Email getLastEmail() {
