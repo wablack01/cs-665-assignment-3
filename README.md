@@ -1,16 +1,19 @@
 
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
-| Name         | FIRST_NAME LAST_NAME       |
-| Date         | MM/DD/YYYY                 |
-| Course       | Fall / Spring / Summer     |
-| Assignment # |                            |
+| Name         | Walker Black               |
+| Date         | 03/06/2024                 |
+| Course       | Spring                     |
+| Assignment # | 3                          |
 
 # Assignment Overview
-Please add a paragraph or two overviewing the objectives of the assignment.
+The objective of this assignment is to create an email generation application a business can use to send email's to
+their customers. The business has many different types of customer's each requiring different types of emails. The
+applicaition should automatically generate the correct type of email based on the customer the email will be sent to.
+This is accomplished using the Factory Method Pattern.
 
 # GitHub Repository Link:
-https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
+https://github.com/wablack01/cs-665-assignment-3
 
 # Implementation Description 
 
@@ -19,11 +22,26 @@ For each assignment, please answer the following:
 
 - Explain the level of flexibility in your implementation, including how new object types can
 be easily added or removed in the future.
+  - The client only refers to the Email interface and the EmailFactory and Customer abstract classes. New customer types
+  can be added by extending the Customer abstract class, and new Email types can be added by implementing the Email
+  interface or extending the CustomerEmail abstract class (which already implements Email). They can then be added to
+  the if-else logic in CustomerEmailFactory or a different EmailFactory class.
 - Discuss the simplicity and understandability of your implementation, ensuring that it is
 easy for others to read and maintain.
+  - Classes, methods, and variables are named clearly to match their intended purpose. Classes are structured to contain
+  only the functionality directly related to their purpose and are logically grouped in packages. The code is also 
+  thoroughly commented.
 - Describe how you have avoided duplicated code and why it is important.
+  - I created the CustomerEmail abstract class (which was not explicitly part of the design pattern) to implement
+  the functionality of different Email types. All of the Email implementations had the same functionality with different
+  content so I moved the functionality into CustomerEmail and let only the specific content be defined in the concrete
+  classes.
 - If applicable, mention any design patterns you have used and explain why they were
 chosen.
+  - I chose to use the Factory Method Pattern for this application. The purpose of the application was to automatically
+  generate different types of Email for each customer which this pattern handles very well. The client (Main.java)
+  only needs to know when to create a new Email for a Customer. The logic is delegated to the CustomerEmailFactory
+  to determine which type of Email to create.
 
 
 # Maven Commands
